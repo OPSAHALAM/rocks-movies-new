@@ -1,0 +1,189 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 20px;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #ff9800;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.header h1 {
+    color: #ff9800;
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Navigation Menu */
+.main-nav {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.main-nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ff9800;
+}
+
+/* New Sections */
+.categories-section, .about-us-section {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.categories-section h2, .about-us-section h2 {
+    color: #ff9800;
+    margin-top: 0;
+    border-bottom: 1px solid #ff9800;
+    padding-bottom: 5px;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-list a {
+    background-color: #292929;
+    color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.category-list a:hover {
+    background-color: #ff9800;
+    color: #121212;
+}
+
+/* Movie list styles for a grid layout */
+.movie-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie-list li {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-list li:hover {
+    transform: translateY(-8px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Movie card specific styles */
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 350px;
+    display: block;
+    object-fit: cover;
+    border-bottom: 2px solid #ff9800;
+}
+
+.movie-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+/* Download button styles */
+.download-btn {
+    background-color: #ff3c00;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.download-btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.02);
+}
+
+/* New style for the name separator */
+.name-separator {
+    border-right: 1px solid #f1f1f1;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+/* Stylish paragraph style */
+.about-us-section p:first-of-type {
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+/* Contact info style */
+.about-us-section p:nth-of-type(2) {
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-top: 1px solid #ff9800; /* Border is now at the top */
+    padding-top: 10px; /* Adjust padding to match */
+    margin-top: 10px; /* Adjust margin to match */
+    margin-bottom: 10px;
+}
